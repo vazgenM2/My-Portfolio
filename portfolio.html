@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <link rel="icon" href="./imges/favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md py-4 fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <a href="#" class="text-2xl font-bold text-emerald-600 rounded-md p-2 hover:bg-emerald-50 transition duration-300">My Portfolio</a>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-gray-700 hover:text-emerald-600 transition duration-300 font-medium rounded-md p-2 hover:bg-emerald-50">Home</a></li>
+                <li><a href="#about" class="text-gray-700 hover:text-emerald-600 transition duration-300 font-medium rounded-md p-2 hover:bg-emerald-50">About</a></li>
+                <li><a href="#skills" class="text-gray-700 hover:text-emerald-600 transition duration-300 font-medium rounded-md p-2 hover:bg-emerald-50">Skills</a></li>
+                <li><a href="#projects" class="text-gray-700 hover:text-emerald-600 transition duration-300 font-medium rounded-md p-2 hover:bg-emerald-50">Projects</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-emerald-600 transition duration-300 font-medium rounded-md p-2 hover:bg-emerald-50">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-20"> <!-- Padding to prevent content from being hidden by fixed header -->
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-emerald-500 to-teal-600 text-white p-4 fade-in">
+            <div class="text-center max-w-3xl">
+                <img src="./imges/my.jpg" alt="Profile Picture" class="myimg rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+                <h1 class="text-5xl font-extrabold mb-4 leading-tight">Hi, I'm Vazgen</h1>
+                <p class="text-xl mb-8">I am a web developer.</p>
+                <a href="#projects" class="bg-white text-emerald-600 hover:bg-emerald-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 bg-white p-4 fade-in">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-8">About Me</h2>
+                <p class="text-lg leading-relaxed text-gray-700 mb-2">
+                    Welcome to my portfolio site where you will see the projects I have created, my skills and be able to contact me
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    I am a web developer, I am 21 and started doing this many years ago. I studied in college as a programmer, and also took several courses. I love my job and want to do more of it. I am a goal-oriented, hard-working person and am ready to work in a team. Basically, I had freelance work and received good reviews. Both worked with the front and dealt with the server
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-100 p-4 fade-in">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">My Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Skill 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Web Development</h3>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                            <div class="bg-emerald-600 h-2.5 rounded-full" style="width: 90%;"></div>
+                        </div>
+                        <p class="text-gray-600">HTML, CSS, JavaScript, PHP</p>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Frameworks</h3>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                            <div class="bg-emerald-600 h-2.5 rounded-full" style="width: 50%;"></div>
+                        </div>
+                        <p class="text-gray-600">React, Redux</p>
+                    </div>
+                    <!-- Skill 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Database Management</h3>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                            <div class="bg-emerald-600 h-2.5 rounded-full" style="width: 50%;"></div>
+                        </div>
+                        <p class="text-gray-600">MongoDB, MySQL</p>
+                    </div>
+                    <!-- Skill 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Version Control</h3>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                            <div class="bg-emerald-600 h-2.5 rounded-full" style="width: 95%;"></div>
+                        </div>
+                        <p class="text-gray-600">Git, GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white p-4 fade-in">
+            <div class="container mx-auto max-w-5xl">
+                <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">My Projects</h2>
+                <div class="works grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+                        <img src="./imges/woman-body.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Woman body model</h3>
+                            <p class="text-gray-600 mb-4">Model of a woman for the site Cosmolab.am, where you can click on different parts of the body for epilation, see different offers and bonuses</p>
+                            <a href="https://vazgenm2.github.io/woman-body-model/" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-medium transition duration-300">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+                        <img src="./imges/lucky-cards.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Generating numbers for lotto</h3>
+                            <p class="text-gray-600 mb-4">Creating the front of this page and then receiving numbers from the server and placing them in the right places</p>
+                            <a style="color: black; opacity: 0.4;" class="text-emerald-600 hover:text-emerald-800 font-medium transition duration-300">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
+                        <img src="./imges/card-shop.png" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Product cards slider</h3>
+                            <p class="text-gray-600 mb-4">A simple page with product cards that can be changed with a click. The site is responsive</p>
+                            <a href="https://github.com/vazgenM2/shop-card" target="_blank" class="text-emerald-600 hover:text-emerald-800 font-medium transition duration-300">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-100 p-4 fade-in">
+            <div class="container mx-auto max-w-2xl">
+                <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">Contact</h2>
+                <div class="mediacont bg-white p-8 rounded-lg shadow-md">
+                    <p class="socialmedia text-2xl font-bold text-gray-800 text-center mb-12">
+                        <img src="./imges/facebook.png" alt="" srcset="">
+                        <a target="_blank" href="https://www.facebook.com/vazgen.manaseryan/"> My Facebook Account </a>
+                    </p>
+                    <p class="socialmedia text-2xl font-bold text-gray-800 text-center mb-12">
+                        <img src="./imges/instagram.png" alt="" srcset="">
+                        <a target="_blank" href="https://www.instagram.com/vazgen_manaseryan/"> My Instagram Account </a>
+                    </p>
+                    <p class="socialmedia text-2xl font-bold text-gray-800 text-center mb-12">
+                        <img src="./imges/linkedin.png" alt="" srcset="">
+                        <a target="_blank" href="https://www.linkedin.com/in/vazgen-manaseryan-178081226/"> My LinkedIn Account  </a>
+                    </p>
+                    <p class="socialmedia text-2xl font-bold text-gray-800 text-center mb-12">
+                        <img src="./imges/github.png" alt="" srcset="">
+                        <a target="_blank" href="https://github.com/vazgenM2"> My Github Account </a>
+                    </p>
+                    <p class="socialmedia text-2xl font-bold text-gray-800 text-center">
+                        <img src="./imges/phone.png" alt="" srcset="">
+                        <a disabled> Tel. +374 (77) 144 - 801 </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a target="_blank" href="https://www.linkedin.com/in/vazgen-manaseryan-178081226/" class="text-gray-400 hover:text-white transition duration-300">LinkedIn</a>
+                <a target="_blank" href="https://github.com/vazgenM2" class="text-gray-400 hover:text-white transition duration-300">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="fixed bottom-8 right-8 bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-110 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script src="./index.js"></script>
+</body>
+</html>
