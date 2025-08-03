@@ -1,1 +1,1 @@
-[Link](https://github.com/vazgenM2/My-Portfolio/) to my portfolio
+[Link](vazgenM2.github.io/My-Portfolio/) to my portfolio
